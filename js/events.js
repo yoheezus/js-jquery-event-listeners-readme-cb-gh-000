@@ -19,10 +19,13 @@ function pressIt() {
             alert("You have pressed the G key.")
         }
     })
+    return ;
 }
 
 function submitIt() {
-
+    $("form").on("submit", () => {
+        alert("Your form is going to be submitted now")
+    })
 }
 
 $(document).ready(function(){
